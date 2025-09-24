@@ -43,12 +43,19 @@
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
-  "[python]": { "editor.defaultFormatter": "ms-python.black-formatter" },
-  "python.formatting.provider": "black",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "explicit",
+      "source.removeUnusedImports": "never"
+    }
+  },
   "ruff.enable": true,
-  "ruff.lint.run": "onSave",
-  "ruff.fixOnSave": true,
-  "python.analysis.autoImportCompletions": true,
+  "ruff.organizeImports": true,
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.organizeImports": false,
 
   "[php]": { "editor.defaultFormatter": "junstyle.php-cs-fixer" },
   "php-cs-fixer.allowRisky": true,
@@ -71,7 +78,11 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
     "editor.minimap.enabled": false
   },
   "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -116,7 +127,7 @@
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
   "diffEditor.renderSideBySide": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.hideUnchangedRegions.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,
   "scm.diffDecorations": "all",
@@ -129,7 +140,6 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.closeOnFileDelete": true,
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
@@ -141,7 +151,6 @@
   "explorer.compactFolders": false,
   "zenMode.hideActivityBar": true,
   "zenMode.hideStatusBar": true,
-  "zenMode.hideTabs": false,
   "zenMode.hideLineNumbers": false,
 
   // === TIPOGRAFÍA / CURSOR ===
@@ -239,5 +248,6 @@
   // === SECURITY ===
   "security.workspace.trust.untrustedFiles": "prompt",
   "security.workspace.trust.banner": "always",
-  "security.workspace.trust.startupPrompt": "always"
+  "security.workspace.trust.startupPrompt": "always",
+  "workbench.activityBar.location": "hidden"
 }
