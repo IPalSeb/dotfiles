@@ -16,7 +16,6 @@
   "files.trimFinalNewlines": true,
   "files.autoSave": "onFocusChange",
   "editor.wordWrap": "on",
-  "editor.rulers": [80, 120],
   "editor.renderWhitespace": "boundary",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
@@ -165,7 +164,7 @@
 
   // === MINIMAPA ===
   "editor.minimap.renderCharacters": false,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.hideCursorInOverviewRuler": true,
 
   // === TERMINAL ===
@@ -249,5 +248,6 @@
   "security.workspace.trust.untrustedFiles": "prompt",
   "security.workspace.trust.banner": "always",
   "security.workspace.trust.startupPrompt": "always",
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "console-ninja.featureSet": "Community"
 }
