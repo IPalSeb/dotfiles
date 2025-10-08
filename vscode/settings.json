@@ -34,6 +34,16 @@
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
 
+  // === PRETTIER CONFIG ===
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.endOfLine": "lf",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.arrowParens": "always",
+
   // === FORMATTERS POR LENGUAJE ===
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
