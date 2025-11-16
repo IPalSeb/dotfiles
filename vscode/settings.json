@@ -2,10 +2,7 @@
   // === GENERALES ===
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit",
-    "source.removeUnusedImports": "explicit"
   },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
@@ -28,21 +25,10 @@
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.tabCompletion": "on",
   "editor.snippetSuggestions": "top",
-  "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-
-  // === PRETTIER CONFIG ===
-  "prettier.semi": true,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5",
-  "prettier.endOfLine": "lf",
-  "prettier.printWidth": 80,
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.arrowParens": "always",
 
   // === FORMATTERS POR LENGUAJE ===
   "editor.defaultFormatter": "esbenp.prettier-vscode",
