@@ -1,0 +1,13 @@
+{
+  "enabledCssSnippets": [
+    "kanagawa"
+  ],
+  "cssTheme": "",
+  "interfaceFontFamily": "Inter",
+  "textFontFamily": "JetBrains Mono",
+  "monospaceFontFamily": "JetBrains Mono",
+  "theme": "obsidian",
+  "accentColor": "",
+  "showRibbon": false,
+  "translucency": false
+}

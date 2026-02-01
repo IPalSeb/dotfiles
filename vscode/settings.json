@@ -1,0 +1,240 @@
+{
+  // ─── General ───────────────────────────────────────────
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+  },
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "boundary",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.indentation": true,
+  "editor.linkedEditing": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.suggest.insertMode": "replace",
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "top",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // ─── Formatters ────────────────────────────────────────
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.organizeImports": "explicit",
+      "source.removeUnusedImports": "never"
+    }
+  },
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.organizeImports": false,
+
+  "[liquid]": { "editor.defaultFormatter": "Shopify.theme-check-vscode" },
+  "themeCheck.checkOnOpen": true,
+  "themeCheck.checkOnSave": true,
+
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.minimap.enabled": false
+  },
+  "[yaml]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // ─── ESLint ────────────────────────────────────────────
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "mdx"
+  ],
+
+  // ─── Tailwind ──────────────────────────────────────────
+  "tailwindSorter.runOnSave": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["class=\"([^\"]*)", "([^\"]*)*"],
+    ["className=\"([^\"]*)", "([^\"]*)*"],
+    ["class='([^']*)", "([^']*)*"],
+    ["className='([^']*)", "([^']*)*"]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "javascript": "javascript",
+    "typescript": "typescript",
+    "javascriptreact": "javascriptreact",
+    "typescriptreact": "typescriptreact",
+    "html": "html",
+    "vue": "vue",
+    "svelte": "svelte"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  // ─── Git / Diff ────────────────────────────────────────
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "always",
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.hideUnchangedRegions.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+  "scm.diffDecorations": "all",
+
+  // ─── UI ────────────────────────────────────────────────
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.showKeys": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.statusBar.visible": false,
+  "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "workbench.layoutControl.enabled": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.hideLineNumbers": false,
+
+  // ─── Font / Cursor ─────────────────────────────────────
+  "editor.fontFamily": "JetBrains Mono, monospace",
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.5,
+  "editor.fontLigatures": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+
+  // ─── Minimap ──────────────────────────────────────────
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.autohide": "mouseover",
+  "editor.hideCursorInOverviewRuler": true,
+
+  // ─── Terminal ──────────────────────────────────────────
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "JetBrains Mono, monospace",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.rightClickBehavior": "paste",
+
+  // ─── Theme ─────────────────────────────────────────────
+  "workbench.colorTheme": "Kanagawa",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorCustomizations": {
+    "editorGutter.addedBackground": "#5e9c76",
+    "editorGutter.deletedBackground": "#c4746e",
+    "editorGutter.modifiedBackground": "#7e9cd8"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Strings and keys",
+        "scope": [
+          "string",
+          "constant.other.symbol",
+          "constant.other.key",
+          "meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+        ],
+        "settings": { "foreground": "#a7c080" }
+      }
+    ]
+  },
+
+  // ─── Exclusions ────────────────────────────────────────
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/vendor": true
+  },
+  "search.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/.venv": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/vendor": true
+  },
+
+  // ─── Performance ───────────────────────────────────────
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "manual",
+  "files.hotExit": "onExitAndWindowClose",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.next/**": true,
+    "**/coverage/**": true
+  },
+
+  // ─── Security ──────────────────────────────────────────
+  "security.workspace.trust.untrustedFiles": "prompt",
+  "security.workspace.trust.banner": "always",
+  "security.workspace.trust.startupPrompt": "always",
+  "workbench.activityBar.location": "hidden",
+  "console-ninja.featureSet": "Community"
+}

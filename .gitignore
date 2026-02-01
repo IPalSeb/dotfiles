@@ -1,0 +1,10 @@
+.DS_Store
+*.backup
+.env
+.env.*
+*.swp
+*.swo
+*~
+.idea/
+*.log
+macos-defaults.backup

@@ -1,0 +1,66 @@
+# ─── Font ─────────────────────────────────────────────
+
+font-family = JetBrains Mono
+font-size = 14
+font-feature = calt
+font-feature = liga
+
+# ─── Cursor ───────────────────────────────────────────
+
+cursor-style = block
+cursor-style-blink = false
+
+# ─── Colors (Kanagawa Wave) ───────────────────────────
+
+background = #1f1f28
+foreground = #dcd7ba
+cursor-color = #c8c093
+cursor-text = #1d202f
+selection-background = #2d4f67
+selection-foreground = #c8c093
+
+# ANSI Normal
+palette = 0=#090618
+palette = 1=#c34043
+palette = 2=#76946a
+palette = 3=#c0a36e
+palette = 4=#7e9cd8
+palette = 5=#957fb8
+palette = 6=#6a9589
+palette = 7=#c8c093
+
+# ANSI Bright
+palette = 8=#727169
+palette = 9=#e82424
+palette = 10=#98bb6c
+palette = 11=#e6c384
+palette = 12=#7fb4ca
+palette = 13=#938aa9
+palette = 14=#7aa89f
+palette = 15=#dcd7ba
+
+# ─── Window ───────────────────────────────────────────
+
+window-decoration = true
+window-padding-x = 4
+window-padding-y = 4
+window-padding-balance = true
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+unfocused-split-opacity = 0.85
+
+# ─── Shell ────────────────────────────────────────────
+
+shell-integration-features = cursor,sudo,title
+clipboard-paste-protection = false
+mouse-hide-while-typing = true
+
+# ─── Quick terminal ──────────────────────────────────
+
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = top
+quick-terminal-animation-duration = 0.15
+
+# ─── Bold/Italic ──────────────────────────────────────
+
+bold-is-bright = true
