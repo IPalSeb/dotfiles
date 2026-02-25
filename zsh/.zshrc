@@ -62,6 +62,10 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt SHARE_HISTORY
 
+# ─── Claude Code ─────────────────────────────────────────
+
+export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1
+
 # ─── Aliases ─────────────────────────────────────────────
 
 alias python=python3
