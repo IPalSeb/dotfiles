@@ -86,3 +86,6 @@ alias dcl="docker compose logs -f"
 # ─── Powerlevel10k ───────────────────────────────────────
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# VS Code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
