@@ -52,6 +52,7 @@ unfocused-split-opacity = 0.85
 # ─── Shell ────────────────────────────────────────────
 
 shell-integration-features = cursor,sudo,title
+window-inherit-working-directory = false
 clipboard-paste-protection = false
 mouse-hide-while-typing = true
 

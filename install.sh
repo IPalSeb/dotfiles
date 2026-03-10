@@ -39,8 +39,9 @@ backup_and_link "$DOTFILES/git/.gitignore_global" "$HOME/.gitignore"
 # ─── Ghostty ──────────────────────────────────────────────
 
 info "Setting up Ghostty config..."
-mkdir -p "$HOME/.config/ghostty"
-backup_and_link "$DOTFILES/ghostty/config" "$HOME/.config/ghostty/config"
+GHOSTTY_DIR="$HOME/Library/Application Support/com.mitchellh.ghostty"
+mkdir -p "$GHOSTTY_DIR"
+backup_and_link "$DOTFILES/ghostty/config" "$GHOSTTY_DIR/config"
 
 # ─── Neovim ──────────────────────────────────────────────
 
