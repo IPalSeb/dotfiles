@@ -25,6 +25,8 @@ source $ZSH/oh-my-zsh.sh
 export BUN_INSTALL="$HOME/.bun"
 export PYENV_ROOT="$HOME/.pyenv"
 
+eval "$(/opt/homebrew/bin/brew shellenv 2>/dev/null)" || true
+
 path=(
   $BUN_INSTALL/bin
   $PYENV_ROOT/bin
